@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 """==============================================================================
-# Project: DNAseq
+# Project: playground
 # Script : vnodes.py
 # Author : Peng Jia
 # Date   : 2020.07.15
