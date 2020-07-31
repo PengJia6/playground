@@ -6,7 +6,7 @@
 # Author : Peng Jia
 # Date   : 2020.07.15
 # Email  : pengjia@stu.xjtu.edu.cn
-# Description: Visualize resource of cluster
+# Description: Visualize resource of cluster (pbs task system)
 =============================================================================="""
 import os
 
@@ -15,7 +15,7 @@ qstatn = os.popen("qnodes")
 for line in qstatn:
     qnodes_str = qnodes_str + line
 nodes_info = {}
-nodes_list=[]
+nodes_list = []
 for i in qnodes_str.split("\n\n")[:-1]:
     node = i.split("\n")[0]
     nodes_list.append(node)
@@ -29,7 +29,7 @@ for job in qstatn:
             for cpu in lineinfo[1].split(","):
                 if "-" in cpu:
                     start, end = cpu.split("-")
-                    nodes_info[lineinfo[0]][0] += (int(end) - int(start)+1)
+                    nodes_info[lineinfo[0]][0] += (int(end) - int(start) + 1)
                 else:
                     nodes_info[lineinfo[0]][0] += 1
 total_use = 0
@@ -41,8 +41,8 @@ total = 0
 #     total+=info[1]
 for node in nodes_list:
     print(node + ":", str(nodes_info[node][1] - nodes_info[node][0]) + "/" + str(nodes_info[node][1]))
-    total_use+=nodes_info[node][0]
-    total+=nodes_info[node][1]
+    total_use += nodes_info[node][0]
+    total += nodes_info[node][1]
 
 print("-------------------------------------------------")
 print("total" + ":", str(total - total_use) + "/" + str(total))
