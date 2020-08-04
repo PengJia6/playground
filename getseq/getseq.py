@@ -85,8 +85,9 @@ def args_process():
                             help="Input fasta with index [required]")
     parser_bam.add_argument('-r', '--only_in', type=bool, nargs=1, choices=[True, False],
                             default=True,
-                            help="True: only output sequence in a region; "
-                                 "False: output read cover a region")
+                            help="True: only output sequence in a region;\n "
+                                 "False: output read cover a region\n"
+                                 "default [True]")
 
     parser_bam.add_argument('regions', type=str, nargs='*',
                             help="Regions sush as chr1:123456-235689\n"
@@ -159,9 +160,9 @@ def get_seq_from_bam(region, bam, only_in=True):
     cont = 0
     for read in pysam.AlignmentFile(bam).fetch(chrom, start, end):
         if read.is_duplicate or read.is_unmapped: continue
-        header = region + "_" + str(read.query_name)
+        header = ">" + region + "_" + str(read.query_name)
         align_start = read.reference_start
-        print(start, read.reference_start, end, read.reference_end)
+        # print(start, read.reference_start, end, read.reference_end)
         if not (isinstance(read.query_sequence, str) and (len(read.query_sequence) > 2)):
             continue
         if start >= read.query_alignment_start and end <= read.query_alignment_end:
@@ -173,10 +174,10 @@ def get_seq_from_bam(region, bam, only_in=True):
             read_pos = 0
             sub_read_str = []
             this_read_str = read.query_sequence
-            print(len(this_read_str))
+            # print(len(this_read_str))
             # print(read.cigartuples)
             for cigartuple in read.cigartuples:
-                print(cigartuple)
+                # print(cigartuple)
                 if cigartuple[0] in [0, 7, 8]:  # 0 : M : match or mishmatch ; 7: :=:match; 8:X:mismatch
                     # print(this_read_str, read_pos, read_pos + cigartuple[1])
                     match_read = list(this_read_str[read_pos:read_pos + cigartuple[1]])
@@ -185,11 +186,11 @@ def get_seq_from_bam(region, bam, only_in=True):
 
                 elif cigartuple[0] in [1, 4, 5]:  # 1:I:inserion ;4:S:soft clip 5:H:hardclip
                     if cigartuple[0] == 1:
-                        print(read_pos)
-                        # print(alignment.cigartuples)
-                        print(this_read_str[read_pos])
-                        print(this_read_str[read_pos + cigartuple[1]])
-                        print(sub_read_str[-1])
+                        # print(read_pos)
+                        # # print(alignment.cigartuples)
+                        # print(this_read_str[read_pos])
+                        # print(this_read_str[read_pos + cigartuple[1]])
+                        # print(sub_read_str[-1])
                         sub_read_str[-1] += this_read_str[read_pos:read_pos + cigartuple[1]]
                         read_pos += cigartuple[1]
                 elif cigartuple[0] in [2, ]:  # 2:D; 3:N: skip region of reference
@@ -229,7 +230,9 @@ def main():
             get_seq_from_bam(region, args["bam"], only_in=args["only_in"])
         for bed in args["bed"]:
             for line in open(bed):
+
                 lineinfo = line[:-1].split("\t")
+                if len(lineinfo) < 3: continue
                 chrom = lineinfo[0]
                 start, end = map(int, lineinfo[1:3])
                 region = chrom + ":" + str(start) + "-" + str(end)
@@ -240,6 +243,7 @@ def main():
         for bed in args["bed"]:
             for line in open(bed):
                 lineinfo = line[:-1].split("\t")
+                if len(lineinfo) < 3: continue
                 chrom = lineinfo[0]
                 start, end = map(int, lineinfo[1:3])
                 region = chrom + ":" + str(start) + "-" + str(end)
