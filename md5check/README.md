@@ -1,6 +1,6 @@
 # md5 check
 #### Author: Peng Jia  
-#### Email: pengjia$@stu.xjtu.edu.cn  
+#### Email: pengjia@stu.xjtu.edu.cn  
 #### Description: This script is used for md5 check with many file.  
   
 ---
