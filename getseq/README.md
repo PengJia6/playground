@@ -1,13 +1,13 @@
 # getseq 
 
 #### Author: Peng Jia  
-#### Email: pengjia$@stu.xjtu.edu.cn  
+#### Email: pengjia@stu.xjtu.edu.cn  
 #### Description: get a sequence for a bam file or a fasta file based on a bed or a region (chr1:12345-45678).
 ----
 
-##Contact
+## Contact 
 If you have any questions, please contact with Peng Jia (pengjia@stu.xjtu.edu.cn).
-##Requirement
+## Requirement
 * pysam
   
    
