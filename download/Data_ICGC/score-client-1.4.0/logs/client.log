@@ -1,0 +1,301 @@
+2018-09-16 22:32:47,569 [main] INFO  b.o.s.c.ClientMain - Starting ClientMain v1.4.0 on debug with PID 22681 (/mnt/project/Data_ICGC/score-client-1.4.0/lib/score-client.jar started by pengjia in /mnt/project/Data_ICGC)
+2018-09-16 22:32:47,571 [main] INFO  b.o.s.c.ClientMain - The following profiles are active: aws
+2018-09-16 22:32:47,600 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@71f2a7d5: startup date [Sun Sep 16 22:32:47 CST 2018]; root of context hierarchy
+2018-09-16 22:32:48,291 [main] WARN  b.o.s.c.c.ClientConfig - No access token specified
+2018-09-16 22:32:48,478 [main] INFO  b.o.s.c.c.ClientBanner - ----------------------------------------------------------------------------------------------------
+2018-09-16 22:32:48,480 [main] INFO  b.o.s.c.c.ClientBanner - Command:  java -Xmx3G -Dlogging.path=/mnt/project/Data_ICGC/score-client-1.4.0/bin/../logs -Dspring.config.location=/mnt/project/Data_ICGC/score-client-1.4.0/conf/ -Dlogging.config=/mnt/project/Data_ICGC/score-client-1.4.0/conf/logback.xml -Dclient.directory=/mnt/project/Data_ICGC/score-client-1.4.0 -Dstorage.profile=aws -jar classes! ...
+2018-09-16 22:32:48,480 [main] INFO  b.o.s.c.c.ClientBanner - Version:  1.4.0
+2018-09-16 22:32:48,480 [main] INFO  b.o.s.c.c.ClientBanner - Built:    1.4.0
+2018-09-16 22:32:48,480 [main] INFO  b.o.s.c.c.ClientBanner - SCM:
+2018-09-16 22:32:48,527 [main] INFO  b.o.s.c.c.ClientBanner -          git.commit.id.abbrev    : c27fb06
+2018-09-16 22:32:48,527 [main] INFO  b.o.s.c.c.ClientBanner -          git.commit.user.email   : btiernay@oicr.on.ca
+2018-09-16 22:32:48,528 [main] INFO  b.o.s.c.c.ClientBanner -          git.commit.message.full : Fixed merge. 
+2018-09-16 22:32:48,528 [main] INFO  b.o.s.c.c.ClientBanner -          git.commit.id           : c27fb064b5cb17ebf6eebc30b04eec4c3eb64662
+2018-09-16 22:32:48,528 [main] INFO  b.o.s.c.c.ClientBanner -          git.commit.message.short: Fixed merge.
+2018-09-16 22:32:48,528 [main] INFO  b.o.s.c.c.ClientBanner -          git.commit.user.name    : btiernay
+2018-09-16 22:32:48,528 [main] INFO  b.o.s.c.c.ClientBanner -          git.build.user.name     : Unknown
+2018-09-16 22:32:48,528 [main] INFO  b.o.s.c.c.ClientBanner -          git.commit.id.describe  : 4.0.8-3-gc27fb06
+2018-09-16 22:32:48,528 [main] INFO  b.o.s.c.c.ClientBanner -          git.build.user.email    : Unknown
+2018-09-16 22:32:48,528 [main] INFO  b.o.s.c.c.ClientBanner -          git.branch              : origin/develop
+2018-09-16 22:32:48,528 [main] INFO  b.o.s.c.c.ClientBanner -          git.commit.time         : 11.03.2016 @ 11:22:29 EST
+2018-09-16 22:32:48,528 [main] INFO  b.o.s.c.c.ClientBanner -          git.build.time          : 11.03.2016 @ 11:23:08 EST
+2018-09-16 22:32:48,528 [main] INFO  b.o.s.c.c.ClientBanner -          git.remote.origin.url   : git@github.com:icgc-dcc/dcc-common
+2018-09-16 22:32:48,528 [main] INFO  b.o.s.c.c.ClientBanner - Profiles: [aws]
+2018-09-16 22:32:48,528 [main] INFO  b.o.s.c.c.ClientBanner - StandardEnvironment {activeProfiles=[aws], defaultProfiles=[default], propertySources=[systemProperties,systemEnvironment,random,applicationConfig: [classpath:/application.yml]#aws,applicationConfig: [classpath:/application.yml]]}:
+2018-09-16 22:32:48,528 [main] INFO  b.o.s.c.c.ClientBanner -          systemProperties:
+2018-09-16 22:32:48,531 [main] INFO  b.o.s.c.c.ClientBanner -             - LOG_FILE: target/logs/client.log
+2018-09-16 22:32:48,531 [main] INFO  b.o.s.c.c.ClientBanner -             - LOG_PATH: /mnt/project/Data_ICGC/score-client-1.4.0/bin/../logs
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - PID: 22681
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - awt.toolkit: sun.awt.X11.XToolkit
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - client.directory: /mnt/project/Data_ICGC/score-client-1.4.0
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - client.quiet: false
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - client.silent: false
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - file.encoding: UTF-8
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - file.encoding.pkg: sun.io
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - file.separator: /
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.awt.graphicsenv: sun.awt.X11GraphicsEnvironment
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.awt.headless: true
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.awt.printerjob: sun.print.PSPrinterJob
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.class.path: /mnt/project/Data_ICGC/score-client-1.4.0/bin/../conf:/mnt/project/Data_ICGC/score-client-1.4.0/bin/../lib/score-client.jar
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.class.version: 52.0
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.endorsed.dirs: /opt/jdk1.8.0_181/jre/lib/endorsed
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.ext.dirs: /opt/jdk1.8.0_181/jre/lib/ext:/usr/java/packages/lib/ext
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.home: /opt/jdk1.8.0_181/jre
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.io.tmpdir: /tmp
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.protocol.handler.pkgs: org.springframework.boot.loader
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.runtime.name: Java(TM) SE Runtime Environment
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.runtime.version: 1.8.0_181-b13
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.specification.name: Java Platform API Specification
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.specification.vendor: Oracle Corporation
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.specification.version: 1.8
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vendor: Oracle Corporation
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vendor.url: http://java.oracle.com/
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vendor.url.bug: http://bugreport.sun.com/bugreport/
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.version: 1.8.0_181
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vm.info: mixed mode
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vm.name: Java HotSpot(TM) 64-Bit Server VM
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vm.specification.name: Java Virtual Machine Specification
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vm.specification.vendor: Oracle Corporation
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vm.specification.version: 1.8
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vm.vendor: Oracle Corporation
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vm.version: 25.181-b13
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - line.separator: 
+
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - logging.config: /mnt/project/Data_ICGC/score-client-1.4.0/conf/logback.xml
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - logging.path: /mnt/project/Data_ICGC/score-client-1.4.0/bin/../logs
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - org.jboss.logging.provider: slf4j
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - os.arch: amd64
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - os.name: Linux
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - os.version: 4.15.0-34-generic
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - path.separator: :
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - spring.beaninfo.ignore: true
+2018-09-16 22:32:48,532 [main] INFO  b.o.s.c.c.ClientBanner -             - spring.config.location: /mnt/project/Data_ICGC/score-client-1.4.0/conf/
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - storage.profile: aws
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.arch.data.model: 64
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.boot.class.path: /opt/jdk1.8.0_181/jre/lib/resources.jar:/opt/jdk1.8.0_181/jre/lib/rt.jar:/opt/jdk1.8.0_181/jre/lib/sunrsasign.jar:/opt/jdk1.8.0_181/jre/lib/jsse.jar:/opt/jdk1.8.0_181/jre/lib/jce.jar:/opt/jdk1.8.0_181/jre/lib/charsets.jar:/opt/jdk1.8.0_181/jre/lib/jfr.jar:/opt/jdk1.8.0_181/jre/classes
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.boot.library.path: /opt/jdk1.8.0_181/jre/lib/amd64
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.cpu.endian: little
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.cpu.isalist: 
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.desktop: gnome
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.io.unicode.encoding: UnicodeLittle
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.java.command: org.springframework.boot.loader.JarLauncher
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.java.launcher: SUN_STANDARD
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.jnu.encoding: UTF-8
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.net.client.defaultConnectTimeout: 60000
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.net.client.defaultReadTimeout: 60000
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.os.patch.level: unknown
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - user.country: US
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - user.dir: /mnt/project/Data_ICGC
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - user.home: /home/pengjia
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - user.language: en
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - user.name: pengjia
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - user.timezone: Asia/Shanghai
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -          applicationConfig: [classpath:/application.yml]#aws:
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - client.ssl.custom: false
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - metadata.ssl.enabled: true
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - metadata.url: https://virginia.song.icgc.org
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - spring.profiles: aws
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - storage.url: https://virginia.cloud.icgc.org
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -          applicationConfig: [classpath:/application.yml]:
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - client.accessToken: ${accessToken:}
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - client.ansi: ${ansi:true}
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - client.connectTimeoutSeconds: 60
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - client.quiet: ${quiet:false}
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - client.readTimeoutSeconds: 60
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - client.silent: ${silent:false}
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - client.ssl.custom: false
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - logging.file: target/logs/client.log
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - metadata.ssl.enabled: true
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - metadata.url: https://song.cancercollaboratory.org
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - mount.logging: false
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - portal.url: https://dcc.icgc.org
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - storage.retryNumber: 10
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - storage.retryTimeout: 1
+2018-09-16 22:32:48,533 [main] INFO  b.o.s.c.c.ClientBanner -             - storage.url: http://localhost:5431
+2018-09-16 22:32:48,534 [main] INFO  b.o.s.c.c.ClientBanner -             - token.public-key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlvqX7PDezX7BC0yc14zwJw2qgs5KDyZZvEeNowHCgHLcCtCVZ2JIx+ccUPp1FVudfZpLoboZ3RjT+6oOPHpNilXqUZfT81acCVHhvyJe7FNxdUWKpIIVKM/8bJj1pVkst0YHLBJ3KojZYJCMNUxUkyHM+yGrn9tmSdFBmwJnBLTkSxOrS2bvuZvkjERnoQJCoTm2XBKoCOzEuVPjIeB2KiFcNqiZwhjnCSQGPmg7fyJfQt1vMl+8RST3IXxphf8KKaWMl0rTXQhIHYL23P/tvC2lpJgx0rzgnxkAgFSrCxLstIklFAAg+j7ykivOyynIlCfXGv4cPTq5UqvIB8MBRQIDAQAB
+2018-09-16 22:32:48,534 [main] INFO  b.o.s.c.c.ClientBanner -             - transport.fileFrom: memory
+2018-09-16 22:32:48,534 [main] INFO  b.o.s.c.c.ClientBanner -             - transport.memory: 1
+2018-09-16 22:32:48,534 [main] INFO  b.o.s.c.c.ClientBanner -             - transport.parallel: 6
+2018-09-16 22:32:48,534 [main] INFO  b.o.s.c.c.ClientBanner - ----------------------------------------------------------------------------------------------------
+
+
+2018-09-16 22:32:48,562 [main] ERROR b.o.s.c.ClientMain - Missing command: 
+com.beust.jcommander.MissingCommandException: Command name is empty. Please specify a command to execute
+	at bio.overture.score.client.cli.Parameters.checkCommand(Parameters.java:41)
+	at bio.overture.score.client.ClientMain.resolveCommand(ClientMain.java:186)
+	at bio.overture.score.client.ClientMain.run(ClientMain.java:136)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:800)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:784)
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:134)
+	at bio.overture.score.client.ClientMain.main(ClientMain.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:58)
+2018-09-16 22:32:48,570 [Thread-1] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@71f2a7d5: startup date [Sun Sep 16 22:32:47 CST 2018]; root of context hierarchy
+2018-09-16 22:35:48,345 [main] INFO  b.o.s.c.ClientMain - Starting ClientMain v1.4.0 on debug with PID 22744 (/mnt/project/Data_ICGC/score-client-1.4.0/lib/score-client.jar started by pengjia in /mnt/project/Data_ICGC)
+2018-09-16 22:35:48,348 [main] INFO  b.o.s.c.ClientMain - The following profiles are active: collab
+2018-09-16 22:35:48,390 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@71f2a7d5: startup date [Sun Sep 16 22:35:48 CST 2018]; root of context hierarchy
+2018-09-16 22:35:49,028 [main] WARN  b.o.s.c.c.ClientConfig - No access token specified
+2018-09-16 22:35:49,217 [main] INFO  b.o.s.c.c.ClientBanner - ----------------------------------------------------------------------------------------------------
+2018-09-16 22:35:49,219 [main] INFO  b.o.s.c.c.ClientBanner - Command:  java -Xmx3G -Dlogging.path=/mnt/project/Data_ICGC/score-client-1.4.0/bin/../logs -Dspring.config.location=/mnt/project/Data_ICGC/score-client-1.4.0/conf/ -Dlogging.config=/mnt/project/Data_ICGC/score-client-1.4.0/conf/logback.xml -Dclient.directory=/mnt/project/Data_ICGC/score-client-1.4.0 -Dstorage.profile=aws -jar classes! ...
+2018-09-16 22:35:49,219 [main] INFO  b.o.s.c.c.ClientBanner - Version:  1.4.0
+2018-09-16 22:35:49,219 [main] INFO  b.o.s.c.c.ClientBanner - Built:    1.4.0
+2018-09-16 22:35:49,219 [main] INFO  b.o.s.c.c.ClientBanner - SCM:
+2018-09-16 22:35:49,271 [main] INFO  b.o.s.c.c.ClientBanner -          git.commit.id.abbrev    : c27fb06
+2018-09-16 22:35:49,271 [main] INFO  b.o.s.c.c.ClientBanner -          git.commit.user.email   : btiernay@oicr.on.ca
+2018-09-16 22:35:49,271 [main] INFO  b.o.s.c.c.ClientBanner -          git.commit.message.full : Fixed merge. 
+2018-09-16 22:35:49,271 [main] INFO  b.o.s.c.c.ClientBanner -          git.commit.id           : c27fb064b5cb17ebf6eebc30b04eec4c3eb64662
+2018-09-16 22:35:49,271 [main] INFO  b.o.s.c.c.ClientBanner -          git.commit.message.short: Fixed merge.
+2018-09-16 22:35:49,271 [main] INFO  b.o.s.c.c.ClientBanner -          git.commit.user.name    : btiernay
+2018-09-16 22:35:49,271 [main] INFO  b.o.s.c.c.ClientBanner -          git.build.user.name     : Unknown
+2018-09-16 22:35:49,271 [main] INFO  b.o.s.c.c.ClientBanner -          git.commit.id.describe  : 4.0.8-3-gc27fb06
+2018-09-16 22:35:49,271 [main] INFO  b.o.s.c.c.ClientBanner -          git.build.user.email    : Unknown
+2018-09-16 22:35:49,271 [main] INFO  b.o.s.c.c.ClientBanner -          git.branch              : origin/develop
+2018-09-16 22:35:49,271 [main] INFO  b.o.s.c.c.ClientBanner -          git.commit.time         : 11.03.2016 @ 11:22:29 EST
+2018-09-16 22:35:49,271 [main] INFO  b.o.s.c.c.ClientBanner -          git.build.time          : 11.03.2016 @ 11:23:08 EST
+2018-09-16 22:35:49,271 [main] INFO  b.o.s.c.c.ClientBanner -          git.remote.origin.url   : git@github.com:icgc-dcc/dcc-common
+2018-09-16 22:35:49,271 [main] INFO  b.o.s.c.c.ClientBanner - Profiles: [collab]
+2018-09-16 22:35:49,271 [main] INFO  b.o.s.c.c.ClientBanner - StandardEnvironment {activeProfiles=[collab], defaultProfiles=[default], propertySources=[systemProperties,systemEnvironment,random,applicationConfig: [classpath:/application.yml]#collab,applicationConfig: [classpath:/application.yml]]}:
+2018-09-16 22:35:49,271 [main] INFO  b.o.s.c.c.ClientBanner -          systemProperties:
+2018-09-16 22:35:49,274 [main] INFO  b.o.s.c.c.ClientBanner -             - LOG_FILE: target/logs/client.log
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - LOG_PATH: /mnt/project/Data_ICGC/score-client-1.4.0/bin/../logs
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - PID: 22744
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - awt.toolkit: sun.awt.X11.XToolkit
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - client.directory: /mnt/project/Data_ICGC/score-client-1.4.0
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - client.quiet: false
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - client.silent: false
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - file.encoding: UTF-8
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - file.encoding.pkg: sun.io
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - file.separator: /
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.awt.graphicsenv: sun.awt.X11GraphicsEnvironment
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.awt.headless: true
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.awt.printerjob: sun.print.PSPrinterJob
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.class.path: /mnt/project/Data_ICGC/score-client-1.4.0/bin/../conf:/mnt/project/Data_ICGC/score-client-1.4.0/bin/../lib/score-client.jar
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.class.version: 52.0
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.endorsed.dirs: /opt/jdk1.8.0_181/jre/lib/endorsed
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.ext.dirs: /opt/jdk1.8.0_181/jre/lib/ext:/usr/java/packages/lib/ext
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.home: /opt/jdk1.8.0_181/jre
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.io.tmpdir: /tmp
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.protocol.handler.pkgs: org.springframework.boot.loader
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.runtime.name: Java(TM) SE Runtime Environment
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.runtime.version: 1.8.0_181-b13
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.specification.name: Java Platform API Specification
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.specification.vendor: Oracle Corporation
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.specification.version: 1.8
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vendor: Oracle Corporation
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vendor.url: http://java.oracle.com/
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vendor.url.bug: http://bugreport.sun.com/bugreport/
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.version: 1.8.0_181
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vm.info: mixed mode
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vm.name: Java HotSpot(TM) 64-Bit Server VM
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vm.specification.name: Java Virtual Machine Specification
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vm.specification.vendor: Oracle Corporation
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vm.specification.version: 1.8
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vm.vendor: Oracle Corporation
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - java.vm.version: 25.181-b13
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - line.separator: 
+
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - logging.config: /mnt/project/Data_ICGC/score-client-1.4.0/conf/logback.xml
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - logging.path: /mnt/project/Data_ICGC/score-client-1.4.0/bin/../logs
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - org.jboss.logging.provider: slf4j
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - os.arch: amd64
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - os.name: Linux
+2018-09-16 22:35:49,275 [main] INFO  b.o.s.c.c.ClientBanner -             - os.version: 4.15.0-34-generic
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - path.separator: :
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - spring.beaninfo.ignore: true
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - spring.config.location: /mnt/project/Data_ICGC/score-client-1.4.0/conf/
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - storage.profile: collab
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.arch.data.model: 64
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.boot.class.path: /opt/jdk1.8.0_181/jre/lib/resources.jar:/opt/jdk1.8.0_181/jre/lib/rt.jar:/opt/jdk1.8.0_181/jre/lib/sunrsasign.jar:/opt/jdk1.8.0_181/jre/lib/jsse.jar:/opt/jdk1.8.0_181/jre/lib/jce.jar:/opt/jdk1.8.0_181/jre/lib/charsets.jar:/opt/jdk1.8.0_181/jre/lib/jfr.jar:/opt/jdk1.8.0_181/jre/classes
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.boot.library.path: /opt/jdk1.8.0_181/jre/lib/amd64
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.cpu.endian: little
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.cpu.isalist: 
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.desktop: gnome
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.io.unicode.encoding: UnicodeLittle
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.java.command: org.springframework.boot.loader.JarLauncher --profile collab download --manifest manifest.collaboratory.1525977569066.tsv --output-dir ./
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.java.launcher: SUN_STANDARD
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.jnu.encoding: UTF-8
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.net.client.defaultConnectTimeout: 60000
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.net.client.defaultReadTimeout: 60000
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - sun.os.patch.level: unknown
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - user.country: US
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - user.dir: /mnt/project/Data_ICGC
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - user.home: /home/pengjia
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - user.language: en
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - user.name: pengjia
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - user.timezone: Asia/Shanghai
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -          applicationConfig: [classpath:/application.yml]#collab:
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - client.ssl.custom: false
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - spring.profiles: collab
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - storage.url: https://storage.cancercollaboratory.org
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -          applicationConfig: [classpath:/application.yml]:
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - client.accessToken: ${accessToken:}
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - client.ansi: ${ansi:true}
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - client.connectTimeoutSeconds: 60
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - client.quiet: ${quiet:false}
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - client.readTimeoutSeconds: 60
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - client.silent: ${silent:false}
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - client.ssl.custom: false
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - logging.file: target/logs/client.log
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - metadata.ssl.enabled: true
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - metadata.url: https://song.cancercollaboratory.org
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - mount.logging: false
+2018-09-16 22:35:49,276 [main] INFO  b.o.s.c.c.ClientBanner -             - portal.url: https://dcc.icgc.org
+2018-09-16 22:35:49,277 [main] INFO  b.o.s.c.c.ClientBanner -             - storage.retryNumber: 10
+2018-09-16 22:35:49,277 [main] INFO  b.o.s.c.c.ClientBanner -             - storage.retryTimeout: 1
+2018-09-16 22:35:49,277 [main] INFO  b.o.s.c.c.ClientBanner -             - storage.url: http://localhost:5431
+2018-09-16 22:35:49,277 [main] INFO  b.o.s.c.c.ClientBanner -             - token.public-key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlvqX7PDezX7BC0yc14zwJw2qgs5KDyZZvEeNowHCgHLcCtCVZ2JIx+ccUPp1FVudfZpLoboZ3RjT+6oOPHpNilXqUZfT81acCVHhvyJe7FNxdUWKpIIVKM/8bJj1pVkst0YHLBJ3KojZYJCMNUxUkyHM+yGrn9tmSdFBmwJnBLTkSxOrS2bvuZvkjERnoQJCoTm2XBKoCOzEuVPjIeB2KiFcNqiZwhjnCSQGPmg7fyJfQt1vMl+8RST3IXxphf8KKaWMl0rTXQhIHYL23P/tvC2lpJgx0rzgnxkAgFSrCxLstIklFAAg+j7ykivOyynIlCfXGv4cPTq5UqvIB8MBRQIDAQAB
+2018-09-16 22:35:49,277 [main] INFO  b.o.s.c.c.ClientBanner -             - transport.fileFrom: memory
+2018-09-16 22:35:49,277 [main] INFO  b.o.s.c.c.ClientBanner -             - transport.memory: 1
+2018-09-16 22:35:49,277 [main] INFO  b.o.s.c.c.ClientBanner -             - transport.parallel: 6
+2018-09-16 22:35:49,277 [main] INFO  b.o.s.c.c.ClientBanner - ----------------------------------------------------------------------------------------------------
+
+
+2018-09-16 22:35:51,615 [main] ERROR b.o.s.c.ClientMain - Unknown error: 
+java.lang.RuntimeException: Could not read manifest from 'file:/mnt/project/Data_ICGC/manifest.collaboratory.1525977569066.tsv': /mnt/project/Data_ICGC/manifest.collaboratory.1525977569066.tsv (No such file or directory)
+	at bio.overture.score.client.manifest.ManifestService.readDownloadManifestByURL(ManifestService.java:81)
+	at bio.overture.score.client.manifest.ManifestService.getDownloadManifestByURL(ManifestService.java:69)
+	at bio.overture.score.client.manifest.ManifestService.getDownloadManifest(ManifestService.java:58)
+	at bio.overture.score.client.command.DownloadCommand.execute(DownloadCommand.java:132)
+	at bio.overture.score.client.ClientMain.run(ClientMain.java:139)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:800)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:784)
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:134)
+	at bio.overture.score.client.ClientMain.main(ClientMain.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:58)
+Caused by: java.io.FileNotFoundException: /mnt/project/Data_ICGC/manifest.collaboratory.1525977569066.tsv (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at java.net.URL.openStream(URL.java:1045)
+	at com.google.common.io.Resources$UrlByteSource.openStream(Resources.java:72)
+	at com.google.common.io.ByteSource$AsCharSource.openStream(ByteSource.java:448)
+	at com.google.common.io.CharSource.readLines(CharSource.java:290)
+	at com.google.common.io.Resources.readLines(Resources.java:129)
+	at bio.overture.score.client.manifest.DownloadManifestReader.readManifest(DownloadManifestReader.java:54)
+	at bio.overture.score.client.manifest.ManifestService.readDownloadManifestByURL(ManifestService.java:79)
+	... 18 common frames omitted
+2018-09-16 22:35:51,618 [Thread-1] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@71f2a7d5: startup date [Sun Sep 16 22:35:48 CST 2018]; root of context hierarchy

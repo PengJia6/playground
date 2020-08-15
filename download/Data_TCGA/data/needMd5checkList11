@@ -1,0 +1,2 @@
+md5result=needMd5checkList11.md5
+md5sum /home/TCGA/TCGA_BAM/TCGA-READ/TCGA-AG-A01N/TCGA-AG-A01N-10A-01W-A00E-09/edfa700d2b6c9efced709d7ec52a2f65_gdc_realn.bam >>$md5result
