@@ -4,10 +4,9 @@ website: http://asia.ensembl.org/info/docs/tools/vep/script/index.html
 ### Installation 
 
 * ####install by command 
-  ## _Failed_
+  ## _Failed_ 
   
-<font color=red size=72>颜色</font>
-* ####docker  
+* #### docker  
   * pull the image
     
     ```bash
@@ -17,6 +16,7 @@ website: http://asia.ensembl.org/info/docs/tools/vep/script/index.html
     chmod a+rwx /home/vep_data
     docker run -tiv /home/vep_data:/opt/vep/ .vep ensemblorg/ensembl-vep perl INSTALL.pl # download database cache reference and plugins      
     ```
+    
   * download the required data manually
     
     * download reference and decompress 
@@ -51,7 +51,9 @@ website: http://asia.ensembl.org/info/docs/tools/vep/script/index.html
     cd Plugins 
     axel -n xxx # download additional file of plugins you need
     ```
-  Now, enjoy vep according docker.
+  
+  
+  Now, enjoy vep according docker.  
   
   
   
