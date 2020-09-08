@@ -21,9 +21,14 @@ for i in qnodes_str.split("\n\n")[:-1]:
     nodes_list.append(node)
     total = i.split("np =")[1].split("\n")[0]
     nodes_info[node] = [0, int(total)]
-qstatn = os.popen("qstat -n |grep -v mu01")
-for job in qstatn:
-    lineinfo = job[:-1].lstrip().split("/")
+# qstatn = os.popen("qstat -n |grep -v mu01")
+# for job in qstatn:
+#     lineinfo = job[:-1].lstrip().split("/")
+jobs_list = os.popen("showq|grep Running|awk '{print $1}'")
+for job in jobs_list:
+    job_id = job.strip("\n")
+    lineinfo = os.popen("qstat -f " + job_id + " |grep exec_host").readline().split("= ")[1].rstrip("\n").split("/")
+
     if len(lineinfo) > 1:
         if lineinfo[0] in nodes_info:
             for cpu in lineinfo[1].split(","):
